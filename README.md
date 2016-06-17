@@ -7,18 +7,12 @@ This repo gathers all Swarmic examples
 
 Swarmic is in its early stage. For the moment we only demonstrate the following features:
 
-* Rest service (basic rest example)
 * Camel and Metrics integration thanks to Camel-CDI and Metrics CDI projects (camel-metrics example)
+* Rest service (basic rest example)
+* Rest JPA adding transaction management example
+
 
 Examples can be run directly from Maven or from a fat jar embedding all required dependencies.
-
-## Building
-
-Before playing with examples, make sure to install `bom` and `parent` artifacts in your local Maven repo by issue the following command at the root of the repo.
-
-`mvn clean install`
-
-You can then take a look at existing examples.
 
 ## Feedback
 

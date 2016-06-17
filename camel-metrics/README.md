@@ -14,20 +14,13 @@ All registered metrics are reported to a Slf4j metric reporter which displays al
 
 The example shows you the possibilities given by Camel-CDI to create Camel routes, Metrics CDI to register new Metrics and new reporter to work with reporting info and of course how swarmic can embed all these in a standalone application.
 
-## Building
-
-Before playing with samples, make sure to install `bom` and `parent` artifacts in your local Maven repo by issue the following command at the root of the repo.
-
-`mvn clean install`
-
-You can then take a look at existing samples.
 
 
 ## Running from maven
 
-Once built, you can run the example with
+You can run the example with
 
-`mvn exec:exec`
+`mvn clean package exec:exec`
 
 You'll see all the reporting regarding Camel route displayed on the console.
 
@@ -36,7 +29,7 @@ You'll see all the reporting regarding Camel route displayed on the console.
 
 You can create a fat jar containing all resources to run this example just enter the following command:
 
-`mvn clean install -Pjar`
+`mvn clean package -Pjar`
 
 Then you can launch the service with:
 

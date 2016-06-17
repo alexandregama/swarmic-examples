@@ -3,20 +3,14 @@
 This example show how to build a JAX-RS service using Undertow and RESTEasy fragments
 
 
-## Building
 
-Before playing with samples, make sure to install `bom` and `parent` artifacts in your local maven repo by issue the following command at the root of the repo.
-
-`mvn clean install`
-
-You can then take a look at existing samples.
 
 
 ## Running from maven
 
-Once built, you can run the example with
+You can run the example with
 
-`mvn exec:exec`
+`mvn clean package exec:exec`
 
 You can then test the Rest service with url (with curl or your browser)
 
@@ -28,7 +22,7 @@ Answer should be `Hello : swarmic`
 
 You can create a fat jar containing all resources to run this example just enter the following command:
 
-`mvn clean install -Pjar`
+`mvn clean package -Pjar`
 
 Then you can launch the service with:
 
